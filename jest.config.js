@@ -6,6 +6,7 @@ module.exports = {
     "^.+\\.jsx?$": "babel-jest",
     '\\.(ts|tsx)$': 'ts-jest',
   },
+  transformIgnorePatterns: ["<rootDir>/node_modules/(?!d3)"],
   setupFilesAfterEnv: ["<rootDir>/jest/setup.ts"],
   collectCoverageFrom: [
     "src/**/*.{js,jsx,ts,tsx}",
